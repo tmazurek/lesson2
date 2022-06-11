@@ -12,11 +12,18 @@ public class Lesson2Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Lesson2Application.class, args);
-
+		Greeting greet= new Greeting(1, "straczka");
+		GreetingTest greettest=new GreetingTest(1, "dupsko");
 	}
 
 	@GetMapping("/dupa")
 	public String dupa(@RequestParam(value = "name", defaultValue = "defaultValue") String name){
 	return "hello "  + name;
+
 }
+	@GetMapping("/")
+	public String root(){
+		return "heloo root";
+
+	}
 }
