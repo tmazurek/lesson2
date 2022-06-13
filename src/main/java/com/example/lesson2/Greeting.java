@@ -1,7 +1,6 @@
 package com.example.lesson2;
 
 public class Greeting {
-
     private final long id;
     private final String content;
 
